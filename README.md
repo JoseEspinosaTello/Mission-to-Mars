@@ -1,7 +1,6 @@
 # Mission-to-Mars
 
-![webpic](https://github.com/JoseEspinosaTello/Mission-to-Mars/blob/main/Resources/pagepic.png
-?raw=true)
+![webpic](https://github.com/JoseEspinosaTello/Mission-to-Mars/blob/main/Resources/pagepic.png)
 
 The purpose of this project is to scrape data from an existing source and display it on our own personalized web site.
 
