@@ -17,7 +17,9 @@ def scrape_all():
     
     browser = Browser('chrome', **executable_path, headless=True)
 
-    news_title, news_paragraph = mars_news(browser)
+    news_paragraph, news_title = mars_news(browser)
+
+    print(news_title)
 
     # Run all scraping functions and store results in dictionary
     data = {
@@ -77,8 +79,8 @@ def mars_news(browser):
         #Use the parent element to find the paragraph text
         news_paragraph = slide_elem.find('div', class_='article_teaser_body').get_text()
         
-        print(f'this is the paragraph: {news_paragraph}')
-        print(f'TITLE: {news_title}')
+        # print(f'this is the paragraph: {news_paragraph}')
+        # print(f'TITLE: {news_title}')
     except AttributeError:
 
         return None, None

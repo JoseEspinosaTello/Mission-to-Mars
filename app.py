@@ -30,6 +30,7 @@ def scrape():
 
    #created a new variable to hold the newly scraped data
    mars_data = scraping.scrape_all()
+#    print(mars_data)
 
   #Here, we're inserting data, but not if an identical record already exists.
   # # In the query_parameter, we can specify a field (e.g. {"news_title": "Mars Landing Successful"}), in which case MongoDB will update a document with a matching news_title
